@@ -1,0 +1,16 @@
+{
+  "My RFC": {
+    "prefix": "testsnippet",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export default function $1() {",
+      "  return (",
+      "    <div>$0</div>",
+      "  );",
+      "}"
+    ],
+    "description": "Custom React functional component"
+  }
+}
+
