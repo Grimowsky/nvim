@@ -12,8 +12,8 @@ return {
             scratchPad = { enabled = true },
           },
           right = {
-            enabled = true,
-            scratchPad = { enabled = true },
+            enabled = false,
+            scratchPad = { enabled = false },
           },
         },
       })

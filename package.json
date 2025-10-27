@@ -1,0 +1,29 @@
+{
+  "name": "custom-snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "typescript"
+        ],
+        "path": "snippets/randomtestfile.json"
+      },
+      {
+        "language": [
+          "typescript"
+        ],
+        "path": "snippets/typescript.json"
+      },
+      {
+        "language": [
+          "typescript",
+          "typescriptreact"
+        ],
+        "path": "snippets/typescriptreact.json"
+      }
+    ]
+  }
+}

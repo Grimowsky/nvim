@@ -4,7 +4,7 @@ return {
     local luasnip = require("luasnip")
 
     -- Load default friendly-snippets
-    require("luasnip.loaders.from_vscode").lazy_load()
+    --  require("luasnip.loaders.from_vscode").lazy_load()
 
     -- Load your custom snippets (JSON-style)
     require("luasnip.loaders.from_vscode").lazy_load({
@@ -15,8 +15,6 @@ return {
     -- require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/lua/snippets" })
 
     -- Example: extend snippets to other filetypes
-    luasnip.filetype_extend("typescriptreact", { "javascript" })
-    luasnip.filetype_extend("vue", { "javascript" })
+    -- luasnip.filetype_extend("typescriptreact", { "javascript" })
   end,
 }
-

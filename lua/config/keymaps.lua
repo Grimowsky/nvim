@@ -5,7 +5,7 @@ local opts = { noremap = true, silent = true }
 -- Easier exit from insert mode
 keymap.set("i", "jj", "<Esc>", opts)
 
--- Save file and quit a
+-- Save file and quit
 keymap.set("n", "<D-s>", ":update<Return>", opts)
 keymap.set("n", "<Leader>q", ":quit<Return>", opts)
 keymap.set("n", "<Leader>Q", ":qa<Return>", opts)
@@ -13,10 +13,6 @@ keymap.set("n", "<Leader>Q", ":qa<Return>", opts)
 -- Buffers
 keymap.set("n", "<C-j>", ":bprevious<CR>", opts)
 keymap.set("n", "<C-k>", ":bnext<CR>", opts)
-
--- Disable window switching on Ctrl + <h,l>
-vim.keymap.set("n", "<C-h>", "<Nop>", opts)
-vim.keymap.set("n", "<C-l>", "<Nop>", opts)
 
 -- Snacks.nvim Explorer
 keymap.set("n", "<Leader>e", function()
@@ -33,3 +29,8 @@ keymap.set("n", "<Leader>e", function()
     explorer_pickers[1]:focus()
   end
 end, vim.tbl_extend("force", opts, { desc = "File Explorer" }))
+
+-- Create snippet from vuisual selection
+vim.keymap.set("v", "<leader>sn", function()
+  require("snippet_generator").create_vscode_snippet()
+end, { desc = "Generate VSCode snippet from visual selection" })
