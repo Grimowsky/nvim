@@ -9,8 +9,8 @@ keymap.set("i", "jj", "<Esc>", opts)
 keymap.set("n", "<D-s>", ":update<Return>", opts)
 keymap.set("n", "<Leader>q", ":quit<Return>", opts)
 keymap.set("n", "<Leader>Q", ":qa<Return>", opts)
-
--- Buffers
+keymap.set("i", "ww", "<Esc>:update<CR>", opts)
+--Buffer:update
 keymap.set("n", "<C-j>", ":bprevious<CR>", opts)
 keymap.set("n", "<C-k>", ":bnext<CR>", opts)
 

@@ -55,10 +55,20 @@ return {
     -- change some options
     opts = {
       defaults = {
-        layout_strategy = "horizontal",
-        layout_config = { prompt_position = "top" },
+        layout_strategy = "vertical",
+        layout_config = {
+          vertical = {
+            prompt_position = "top",
+            mirror = true,
+          },
+        },
         sorting_strategy = "ascending",
         winblend = 0,
+      },
+      pickers = {
+        find_files = {
+          theme = "dropdown",
+        },
       },
     },
   },
