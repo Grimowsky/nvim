@@ -1,7 +1,0 @@
-{
-"hello": {
-"description": "hello", "prefix": "hellothere", "body": ["async function bootstrap() {
-", "  const app = await NestFactory.create(AppModule);", "  //global logging middleware", "  app.use(logger);", "  await app.listen(8080);", "
-}"]
-}
-}

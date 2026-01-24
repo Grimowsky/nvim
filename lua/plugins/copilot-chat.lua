@@ -10,6 +10,6 @@ return {
   },
   build = "make tiktoken",
   opts = {
-    window = { width = 0.25 },
+    window = { width = 0.35 },
   },
 }
